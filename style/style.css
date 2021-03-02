@@ -89,12 +89,17 @@ hr {
 
 #cont {
     display: flex;
-    align-items: flex-start;
-    
 }
 
 #cont div ul {
     margin: 0;
+}
+
+#img-cont {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 #img-1 {
@@ -104,7 +109,7 @@ hr {
 }
 
 footer {
-    height: 300px;
+    height: fit-content;
     background-color: rgb(29, 29, 29);
     color: white;
     padding: 100px;
@@ -132,6 +137,7 @@ footer h1 {
     border-radius: 15px;
     transition: 0.2s ease-out;
     font-family: 'Raleway', sans-serif;
+    display: block;
 }
 
 #social a:hover {
@@ -141,4 +147,39 @@ footer h1 {
 @keyframes appear {
     from{left: -100%}
     to{left: 0}
+}
+
+@media (max-width: 720px) {
+    #title h1 {
+        font-size: 2rem;
+    }
+
+    #part-3 h2 {
+        font-size: 1.8rem;
+    }
+
+    #specials {
+        display: block;
+    }
+
+    #cont {
+        display: block;
+    }
+
+    #img-1 {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    #social {
+        display: block;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+    #social a {
+        margin: 8px auto;
+    }
 }
